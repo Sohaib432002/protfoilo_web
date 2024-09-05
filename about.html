@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> About </title>
+  <link rel="icon" type="image/x-icon" href="./images/images-removebg-preview (1).png">
+  <link rel="stylesheet" href="about_css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="path/to/neonCursor-library.js"></script>
+  <video style="width: 100%;" autoplay loop muted src="./Dark Background Web.mp4"> </video>
+</head>
+
+<body>
+  <div class="dis_btn">
+    <div class="img_logo">
+      <img src="./images/images-removebg-preview (1).png" alt="">
+    </div>
+  </div>
+  <div class="btns_intro">
+    <button id="btn-1_button_about" class="btn-1_about" onclick="change_desgn()"> About Me</button>
+  </div>
+  <div class="btn-1" id="btn-1">
+    <div class="card1" id="card1"><button onclick="contact_page()">Contact</button></div>
+    <div class="card2" id="card2"><button onclick="service_page()">Service</button></div>
+    <div class="card3" id="card3"><button onclick="about_page()">About</button></div>
+    <div class="card4" id="card4"><button onclick="Home()">Home</button></div>
+  </div>
+  <div class="heading">
+    <h1><span style="color: red; font: 2rem ;">About</span></h1>
+  </div>
+  <!-- end of header -->
+
+
+  <div class="main_container" id="main_container">
+    <div class="btns_about">
+        <button onclick="personalinfo()">Personal Information</button>
+        <button onclick="bginfo()">Personal Background</button>
+        <button onclick="eduinfo()">Educational Background</button>
+        <button onclick="skill_info()">Skills</button>
+        <button onclick="my_approach()">My Approach</button>
+    </div>
+    <div class="personal_info" id="personal_info">
+      <div class="heading s_heading">
+        <h1><span style="color: red; font: 2rem ;">Personal information</span></h1>
+      </div>
+      <div class="personal_info_details">
+        <img src="./images/png-transparent-icon-user-male-avatar-business-person-profile.png" alt="my_pic">
+        <ul>
+          <li>Name: <span style="color: red; font-weight: bolder;">Muhammad Sohaib Maqsood </span></li>
+          <li>Father Name: <span style="color: red; font-weight: bolder;">Maqsood Ahmed </span></li>
+          <li>Date Of Birth: <span style="color: red; font-weight: bolder;">4 March,2002 </span></li>
+          <li>Nationality: <span style="color: red; font-weight: bolder;">Pakistani </span></li>
+          <li>Religion: <span style="color: red; font-weight: bolder;">Islam </span></li>
+          <li>Gender: <span style="color: red; font-weight: bolder;">Male </span></li>
+          <li>Marital Status: <span style="color: red; font-weight: bolder;">Single </span></li>
+          <li>Address: <span style="color: red; font-weight: bolder;">Mianwali, Pakistan </span></li>
+          <li>Phone: <span style="color: red; font-weight: bolder;">0319-1057875 </span></li>
+          <li>Email: <span style="color: red; font-weight: bolder;">sohaibmaqsoodsohaibmaqsood@gmail.com </span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="Personal_background" id="Personal_background">
+      <div class="heading s_heading">
+        <h1><span style="color: red; font: 2rem ;">Personal Background</span></h1>
+      </div>
+      <div class="personal_background_details">
+        <p>I am [Your Name], a passionate and dedicated web developer with a strong foundation in web technologies and a keen eye for detail. My journey into the world of coding began with a fascination for how websites work, and over time, this interest blossomed into a career that I love.
+        </p>
+    </div>
+  </div>
+  <div class="edu_bg" id="edu_bg">
+    <div class="heading s_heading">
+      <h1><span style="color: red; font: 2rem ;">Educational Background</span></h1>
+    </div>
+    <div class="edu_bg_details">
+      <ul>
+        <li>Matriculation: <span style="color: red; font-weight: bold;">SSC</span> <br>
+            <span style="color: yellow; font-weight: 700;">I completed my matriculation from F.G Fazaia School with a 74% score.</span>
+        </li>
+        <li>Intermediate: <span style="color: red; font-weight: bold;">HSSC</span> <br>
+            <span style="color: yellow; font-weight: 700;">I pursued Intermediate in Computer Science at Abdul Razaq Fazaia College, achieving an 88% score.</span>
+        </li>
+        <li>University: <span style="color: red; font-weight: bold;">Namal University</span> <br>
+            <span style="color: yellow; font-weight: 700;">I earned my BSc in Mathematics from Namal College, graduating with a B+ grade.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="skill_bg" id="skill_bg">
+    <div class="heading s_heading">
+      <h1><span style="color: red; font: 2rem ;">Skills</span></h1>
+    </div>
+    <div class="skill_bg_details">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>Python</li>
+        <li>Django</li>
+      </ul>
+    </div>
+  </div>
+<div class="my_app_bg" id="my_app_bg">
+  <div class="heading s_heading">
+    <h1><span style="color: red; font: 2rem ;">My Applications</span></h1>
+  </div>
+  <div class="my_app_bg_details">
+    <p>I believe in writing clean, maintainable code that follows best practices. Whether I’m working on a small personal project or a large-scale web application, I always strive for excellence and attention to detail.</p>
+    <h4>What I Offer</h4>
+    <ul>
+        <li>Custom Web Solutions</li>
+        <li>Data Analysis</li>
+        <li>Ongoing Support</li>
+    </ul>
+
+</div>
+<div class="btn_touch">
+  <button onclick="contact_page()">Get In Touch</button>
+</div>
+  
+  </div>
+  </div>
+
+
+
+
+  <!-- footer html -->
+  <div class="footer-bottom">
+    <div class="social_media_btn">
+      <button onclick="change_desgn()">About Me</button>
+    </div>
+    <p>&copy; 2024 Sohaib. All rights reserved.</p>
+    <div class="social_media_btn">
+      <button onclick="social_btns()">Social Media</button>
+    </div>
+  </div>
+
+  <div class="social_btns_list" id="social_btns_list">
+    <a href="https://www.instagram.com/sohaib_2000/"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/sohaib-islam-2000"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/sohaib-islam-2000"><i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/sohaib_2000"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.facebook.com/sohaib_2000"><i class="fab fa-facebook-square"></i></a>
+
+
+  </div>
+
+
+
+</body>
+
+<script>
+  function service_page() {
+    const card2 = document.getElementById('card2');
+    card2.style.transition = 'all 1s ease-in-out';
+    card2.style.transform = '';
+    window.location.href = "service.html";
+
+
+  }
+
+  function contact_page() {
+    const card1 = document.getElementById('card1');
+
+    window.location.href = "contact.html";
+
+
+  }
+
+  function about_page() {
+    const card3 = document.getElementById('card3');
+    window.location.href = "about.html";
+  }
+
+  function Home() {
+    
+    const card4 = document.getElementById('card4');
+    card4.style.transition = 'all 0s ease-in-out';
+    card4.style.transform = '';
+    window.location.href = "index.html";
+    
+  }
+
+
+
+  function change_desgn() {
+    const about_btns = document.getElementById('btn-1');
+
+    // Apply the transition to the element
+    about_btns.style.transition = 'all 0.5s ease-in-out';
+
+    if (about_btns.style.right === '-10%') {
+      about_btns.style.right = '-1%';
+    } else {
+      about_btns.style.right = '-10%';
+    }
+  }
+
+  function service_page_python() {
+    window.location.href = "python_service.html";
+  }
+
+  function social_btns() {
+
+    const social_btns = document.getElementById('social_btns_list');
+
+    // Apply the transition to the element
+    social_btns.style.transition = 'all 0.5s ease-in-out';
+
+    if (social_btns.style.left === '-10px') {
+      social_btns.style.left = '-100px';
+    } else {
+      social_btns.style.left = '-10px';
+    }
+  }
+var personalInfoElement = document.getElementById('personal_info');
+var bgInfoElement = document.getElementById('Personal_background');
+var eduInfoElement = document.getElementById('edu_bg');
+var skillInfoElement = document.getElementById('skill_bg');
+var myApproachElement = document.getElementById('my_app_bg');
+var main_container=document.getElementById('main_container');
+
+function personalinfo() {
+    main_container.style.transition='all 0.5s ease-in-out';
+    if (personalInfoElement.style.display === 'none') {
+        personalInfoElement.style.display = 'flex';
+        bgInfoElement.style.display = 'none';
+        eduInfoElement.style.display = 'none';
+        skillInfoElement.style.display = 'none';
+        myApproachElement.style.display = 'none';
+    } else {
+        personalInfoElement.style.display = 'none';
+    }
+    
+}
+
+function bginfo() {
+    
+    if (bgInfoElement.style.display === 'none') {
+        personalInfoElement.style.display = 'none';
+        bgInfoElement.style.display = 'flex';
+        eduInfoElement.style.display = 'none';
+        skillInfoElement.style.display = 'none';
+        myApproachElement.style.display = 'none';
+    } else {
+        bgInfoElement.style.display = 'none';
+    }
+}
+  function eduinfo(){
+      main_container.style.transition='all 0.5s ease-in-out';
+      if (eduInfoElement.style.display === 'none') {
+          personalInfoElement.style.display = 'none';
+        bgInfoElement.style.display = 'none';
+        eduInfoElement.style.display = 'flex';
+        skillInfoElement.style.display = 'none';
+        myApproachElement.style.display = 'none';
+    } else {
+        eduInfoElement.style.display = 'none';
+    }
+}
+function skill_info(){
+    if (skillInfoElement.style.display === 'none') {
+        personalInfoElement.style.display = 'none';
+        bgInfoElement.style.display = 'none';
+        eduInfoElement.style.display = 'none';
+        skillInfoElement.style.display = 'flex';
+        myApproachElement.style.display = 'none';
+    } else {
+        skillInfoElement.style.display = 'none';
+    }
+}
+function my_approach(){
+    if (myApproachElement.style.display === 'none') {
+        personalInfoElement.style.display = 'none';
+        bgInfoElement.style.display = 'none';
+        eduInfoElement.style.display = 'none';
+        skillInfoElement.style.display = 'none';
+        myApproachElement.style.display = 'flex';
+    } else {
+        myApproachElement.style.display = 'none';
+    }
+}
+
+
+</script>
+
+</html>

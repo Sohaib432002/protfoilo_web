@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="./images/images-removebg-preview (1).png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="index.js"></script>
+  <script src="path/to/neonCursor-library.js"></script>
+  
+</head>
+
+<body>
+  <video autoplay loop muted src="./Dark Background Web.mp4"></video>
+    <div class="dis_btn">
+      <div class="img_logo">
+        <img src="./images/images-removebg-preview (1).png" alt="">
+      </div>
+    </div>
+<div class="nav_btn" onclick="change_desgn2()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  <div class="heading-cont" id="heading-cont">
+    <div class="img" id="img">
+      <img src="./images/png-transparent-icon-user-male-avatar-business-person-profile.png" alt="my_pic">
+    </div>
+    <div class="h-text2" id="h-text">
+      <h1>Welcome to my <span style="color: red;">Website</span></h1>
+    </div>
+    <div class="h-text" id="h-text2">
+      <h1>Hi! It's <span style="color: red;">Sohaib</span></h1>
+    </div>
+    <div class="btn-1" id="btn-1">
+      <div class="card1" id="card1"><button onclick="contact_page()">Contact</button></div>
+      <div class="card2" id="card2"><button onclick="service_page()">Service</button></div>
+      <div class="card3" id="card3"><button onclick="about_page()">About</button></div>
+      <div class="card4" id="card4"><button onclick="Home()">Home</button></div>  
+    </div>
+    <div class="btns_intro">
+      <button id="btn-1_button_about" class="btn-1_about" onclick="change_desgn()"> About Me</button>
+      <button id="btn-1_button_about" class="btn-1_about btn-2_about" onclick="change_desgn2()"> About Me2</button>
+      <button id="btn-1_button_social" class="btn-1_social" onclick="social_btns()">Social Media</button>
+    </div>
+
+    <div class="social_btns_list" id="social_btns_list">
+      <a href="https://www.instagram.com/sohaib_2000/"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/sohaib-islam-2000"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sohaib-islam-2000"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/sohaib_2000"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/sohaib_2000"><i class="fab fa-facebook-square"></i></a>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Sohaib. All rights reserved.</p>
+  </div>
+</body>
+
+
+
+<script>
+    function changeColor() {
+      var bg_1 = document.getElementById("bg-color-changer__bg_1");
+      var bg_2 = document.getElementById("bg-color-changer__bg_2");
+      if (bg_1.checked) {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = 'black';
+      } else if (bg_2.checked) {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = 'white';
+      }
+    }
+
+    
+
+    function service_page() {
+      const card2 = document.getElementById('card2');
+      window.location.href = "service.html";
+
+    }
+
+    function contact_page() {
+      const card1 = document.getElementById('card1');
+      window.location.href = "contact.html";
+    }
+
+    function about_page() {
+      const card3 = document.getElementById('card3');
+      window.location.href = "about.html";
+    }
+    
+    function Home() {
+      const card4 = document.getElementById('card4');
+      window.location.href = "index.html";
+
+    }
+
+    function social_btns() {
+
+      const social_btns = document.getElementById('social_btns_list');
+
+      // Apply the transition to the element
+      social_btns.style.transition = 'all 0.5s ease-in-out';
+
+      if (social_btns.style.left === '-10px') {
+        social_btns.style.left = '-100px';
+      } else {
+        social_btns.style.left = '-10px';
+      }
+    }
+    function change_desgn(){
+      const about_btns = document.getElementById('btn-1');
+      
+      // Apply the transition to the element
+      about_btns.style.transition = 'all 0.5s ease-in-out';
+      
+      if (about_btns.style.right === '-156px') {
+        about_btns.style.right = '-5px';
+      } 
+      else {
+        about_btns.style.right = '-156px';
+      }
+    }
+
+    function change_desgn2(){
+      const about_btns = document.getElementById('btn-1');
+      
+      // Apply the transition to the element
+      about_btns.style.transition = 'all 0.5s ease-in-out';
+      
+      if (about_btns.style.display === 'none') {
+        about_btns.style.display='flex'
+      } 
+      else {
+        about_btns.style.display='none'
+      }
+    }
+  </script>
+  
+  </html>

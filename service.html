@@ -19,6 +19,11 @@
       <div class="btns_intro">
         <button id="btn-1_button_about" class="btn-1_about" onclick="change_desgn()"> About Me</button>
       </div>
+      <div class="nav_btn" onclick="change_desgn2()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="btn-1" id="btn-1">
         <div class="card1" id="card1"><button onclick="contact_page()">Contact</button></div>
         <div class="card2" id="card2"><button onclick="service_page()">Service</button></div>
@@ -131,6 +136,20 @@
     function service_page_web(){
       window.location.href = "web_deve.html";
     }
+        function change_desgn2(){
+      const about_btns = document.getElementById('btn-1');
+      
+      // Apply the transition to the element
+      about_btns.style.transition = 'all 0.5s ease-in-out';
+      
+      if (about_btns.style.display === 'none') {
+        about_btns.style.display='flex'
+      } 
+      else {
+        about_btns.style.display='none'
+      }
+    }
+
   </script>
 </script>
 </html>

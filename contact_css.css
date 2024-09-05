@@ -118,7 +118,21 @@ video {
     filter: drop-shadow(0 0 10px red);
 }
 
-
+.nav_btn{
+    position: absolute;
+    border: 2px solid;
+    right: 79px;
+    padding: 6px;
+    right: 65px;
+    top: 37px;
+    display: none;
+  }
+  .nav_btn span{
+    display: flex;
+      background-color: gray;
+      padding: 5px 24px;
+      margin: 5px;
+  }
 
 .btns_intro {
     display: flex;
@@ -216,27 +230,6 @@ video {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 
 
@@ -315,3 +308,331 @@ video {
 
 
 
+@media (max-width: 1700px) {
+    .btn-1 button{
+      font-size: 16px;
+    }
+    .btn-1{
+      display: flex;
+      position: static;
+      border: 2px solid white;
+      border-radius: 23px;
+      flex-direction: row;
+      width: fit-content;
+      flex-wrap: wrap;
+      right: 0;
+      margin: 27px;
+      padding: 0px;
+      display: none;
+      position: absolute;
+    }
+    
+    .nav_btn{
+      padding: 1px;
+      top: 28px;
+      right: 23px;
+      display: block;
+    }
+    
+    .h-text2{
+      font-size: 14px;
+    }
+    .btns_intro button{
+      margin: 7px;
+      font-size: 16px;
+    }
+    
+    .btn-1_about{
+      display: none;
+    }
+    .btn-2_about{
+      display: flex;
+    }
+    .btn-1 button{
+      margin: 13px;
+    }
+    .footer-bottom p{
+      font-size: 12px;
+    }
+    .footer-bottom{
+        padding-top: 100px;
+    }
+    .btn-1{
+      flex-direction: column;
+      z-index: 3;
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    
+    
+    
+    
+    .btns_intro button {
+        margin: 7px;
+        font-size: 16px;
+    }
+    .img img{
+        width: 100px;
+    }
+    .nav_btn{
+      padding: 1px;
+  
+    }
+    .img_logo img{
+      width: 85px;
+      position: absolute;
+    }
+    
+    .heading{
+        padding: 0px;
+    }
+    .heading h1{
+        font-size: 70px;
+    }
+    .btns_about{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size:23px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bottom{
+        padding-top: 80px;
+        flex-wrap: wrap;
+    }
+    .btns_about button{
+        padding: 7px;
+    font-size: 12px;
+    }
+    .social_media_btn button{
+        font-size: 8px;
+    }
+    .footer-bottom p{
+        font-size: 8px;
+    }
+    .nav_btn{
+        display: block;
+    }
+    .btn-1{
+        transition: 0.5s ease-in-out;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: black;
+    z-index: 2;
+    padding: 27px 0px;
+    
+    }
+    .btns_about button{
+        margin: 10px;
+    }
+    .social_btns_list{
+        top: 161px;
+    }
+    .img_logo img{
+      top: -21px;
+    }
+    .card-1,.card-2{
+      flex-wrap: nowrap;
+    }
+    .card-1 button,.card-2 button{
+      border-radius: 12px;
+    }
+    .social_media_btn button {
+      font-size: 15px;
+  }
+  .footer-bottom p {
+    font-size: 16px;
+  }
+  
+    
+  }
+  @media (max-width: 650px) {
+    
+    .heading h1{
+      font-size: 50px;
+    }
+    .btns_intro button {
+        margin: 7px;
+        font-size: 10px;
+    }
+    .img img{
+        width: 59px;
+    }
+    .nav_btn{
+      padding: 1px;
+      top: 28px;
+  
+    }
+    .img_logo img{
+      width: 50px;
+    }
+    .h-text2{
+      font-size: 10px;
+    }
+    .social_btns_list a{
+      font-size: 16px;
+    }
+    .nav_btn span{
+      padding: 2px 16px;
+    }
+    .btn-1 button{
+      margin: 13px;
+      font-size: 22px;
+      padding: 7px;
+      font-size: 12px;
+    }
+  .btn-2_about{
+    display: flex;
+  }
+  .footer-bottom{
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  
+  .footer-bottom{
+    padding-top: 0px;
+  }
+  
+  .footer-bottom p {
+    font-size: 10px;
+  }
+  
+  .footer-bottom {
+    padding-top: 48px;
+  }
+  .btns_about{
+    margin-top: 0px;
+  }
+  .card-1,.card-2{
+  flex-direction: column;
+  }
+  .text_card1 button{
+  font-size: 41px;
+  margin: 33px 0px;
+  border-radius: 9px;
+  padding: 26px;
+  }
+  .img_card1 img{
+  width: 185px;
+  }
+  .img_card2 img{
+    width: 65%;
+    margin: 23px;
+  }
+  .text_card2 button{
+  
+  padding: 26px;
+  font-size: 37px;
+  margin: 30px;
+  border-radius: 9px;
+  }
+  .card-2 {
+  margin-top: 66px;
+  }
+  .social_media_btn button {
+    font-size: 9px;
+  }
+    
+  }
+  
+  @media (max-width: 450px) {
+    .footer-bottom{
+        padding-top: 0px;
+    }
+    
+    .heading h1{
+        font-size: 30px;
+    }
+    .footer-bottom {
+        padding-top: 48px;
+    }
+    .btns_about{
+        margin-top: 0px;
+    }
+    .card-1,.card-2{
+      flex-direction: column;
+    }
+    .text_card1 button{
+      font-size: 41px;
+      margin: 33px 0px;
+      border-radius: 9px;
+      padding: 26px;
+    }
+    .img_card1 img{
+      width: 185px;
+    }
+    .footer-bottom p {
+      font-size: 8px;
+  }
+    .img_card2 img{
+      width: 79%;
+      margin: 0px;
+    }
+    .text_card2 button{
+      
+      padding: 26px;
+      font-size: 37px;
+      margin: 30px;
+      border-radius: 9px;
+    }
+    .card-2 {
+      margin-top: 66px;
+  }
+  .social_media_btn button {
+    font-size: 9px;
+  }
+    
+  }
+   
+  
+  
+  @media (max-width: 300px) {
+    
+    .img_logo img {
+        top: -46px;
+        left: -13px;
+    }
+    .form form{
+        width: 100%;
+    }
+    .form{
+        font-size: 13px;
+    }
+    .submit_btn button{
+        font-size: 13px;
+    }
+    .heading h1{
+        font-size: px;
+    }
+    .heading{
+      margin-top: 67px;
+    }
+    
+    .text_card1 button{
+      font-size: 41px;
+      margin: 33px 0px;
+      border-radius: 9px;
+    }
+    .img_card1 img{
+      width: 185px;
+    }
+    .img_card2 img{
+      width: 79%;
+    }
+    .text_card2 button{
+      padding: 5px;
+      font-size: 37px;
+      margin: 30px;
+      border-radius: 9px;
+    }
+    .card-2 {
+      margin-top: 66px;
+  }
+  .social_media_btn button {
+    font-size: 8px;
+  }
+}

@@ -18,6 +18,11 @@
       <img src="./images/images-removebg-preview (1).png" alt="">
     </div>
   </div>
+  <div class="nav_btn" onclick="change_desgn2()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   <div class="btns_intro">
     <button id="btn-1_button_about" class="btn-1_about" onclick="change_desgn()"> About Me</button>
   </div>
@@ -38,6 +43,7 @@
   <div class="continer">
     <div class="text_con">
       <h1>Key Highlights:</h1>
+      <div class="img_con">
 
       <ul>
         <li>Responsive Design</li>
@@ -46,13 +52,15 @@
         <li>Clean Code Practices</li>
         <li>Up-to-Date with Trends</li>
       </ul>
-    </div>
-    <div class="imgs">
+      <div class="imges_">
       <div class="img1"><img src="./images/png-transparent-logo-html5-brand-design-text-logo-number-thumbnail-removebg-preview.png" alt="html_logo"></div>
         <div class="img2"><img src="./images/png-transparent-javascript-computer-icons-software-developer-cascading-style-sheets-javascript-logo-angle-text-rectangle-thumbnail-removebg-preview.png" alt="javacript_logo"></div>
         <div class="img3"><img src="./images/png-transparent-css-logo-thumbnail-removebg-preview.png" alt="css_logo"></div>
+        <div class="img3"><img src="./images/png-clipart-django-web-development-web-framework-python-software-framework-django-text-trademark-thumbnail-removebg-preview.png" alt="django_logo"></div>
+      </div>
     </div>
   </div>
+</div>
 
 
 
@@ -145,6 +153,19 @@
       social_btns.style.left = '-10px';
     }
   }
+  function change_desgn2(){
+      const about_btns = document.getElementById('btn-1');
+      
+      // Apply the transition to the element
+      about_btns.style.transition = 'all 0.5s ease-in-out';
+      
+      if (about_btns.style.display === 'none') {
+        about_btns.style.display='flex'
+      } 
+      else {
+        about_btns.style.display='none'
+      }
+    }
 </script>
 
 </html>

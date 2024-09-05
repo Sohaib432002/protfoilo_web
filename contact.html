@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Contact  </title>
-  <link rel="icon" type="image/x-icon" href="./images-removebg-preview (1).png">
+  <link rel="icon" type="image/x-icon" href="./images/images-removebg-preview (1).png">
   <link rel="stylesheet" href="contact_css.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="path/to/neonCursor-library.js"></script>
@@ -15,8 +15,13 @@
 <body>
   <div class="dis_btn">
     <div class="img_logo">
-      <img src="./images-removebg-preview (1).png" alt="">
+      <img src="./images/images-removebg-preview (1).png" alt="">
     </div>
+  </div>
+  <div class="nav_btn" onclick="change_desgn2()">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
   <div class="btns_intro">
     <button id="btn-1_button_about" class="btn-1_about" onclick="change_desgn()"> About Me</button>
@@ -147,7 +152,19 @@
       social_btns.style.left = '-10px';
     }
   }
-
+  function change_desgn2(){
+      const about_btns = document.getElementById('btn-1');
+      
+      // Apply the transition to the element
+      about_btns.style.transition = 'all 0.5s ease-in-out';
+      
+      if (about_btns.style.display === 'none') {
+        about_btns.style.display='flex'
+      } 
+      else {
+        about_btns.style.display='none'
+      }
+    }
 </script>
 
 </html>

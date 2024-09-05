@@ -28,7 +28,12 @@
     <div class="card4" id="card4"><button onclick="Home()">Home</button></div>
   </div>
   <div class="heading">
-    <h1><span style="color: red; font: 2rem ;">About</span></h1>
+    <h1><span style="color: red; font: 1rem ;">About</span></h1>
+  </div>
+  <div class="nav_btn" onclick="change_desgn2()">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
   <!-- end of header -->
 
@@ -66,8 +71,9 @@
         <h1><span style="color: red; font: 2rem ;">Personal Background</span></h1>
       </div>
       <div class="personal_background_details">
-        <p>I am [Your Name], a passionate and dedicated web developer with a strong foundation in web technologies and a keen eye for detail. My journey into the world of coding began with a fascination for how websites work, and over time, this interest blossomed into a career that I love.
-        </p>
+        <p>My name is Sohaib, and I am a passionate web developer specializing in both front-end and back-end development. I have a strong proficiency in HTML and CSS for front-end design and often utilize Django for back-end development.
+<br>
+          I completed my matriculation at F.G Fazaia School and pursued my intermediate studies in ICS at ARF College, PAF. Currently, I am advancing my knowledge by pursuing a BS in Mathematics from Namal University.</p>
     </div>
   </div>
   <div class="edu_bg" id="edu_bg">
@@ -232,15 +238,16 @@ function personalinfo() {
         eduInfoElement.style.display = 'none';
         skillInfoElement.style.display = 'none';
         myApproachElement.style.display = 'none';
-    } else {
+      } else {
         personalInfoElement.style.display = 'none';
+        personalInfoElement.style.display = 'flex';
+      }
+      
     }
     
-}
-
 function bginfo() {
     
-    if (bgInfoElement.style.display === 'none') {
+  if (bgInfoElement.style.display === 'none') {
         personalInfoElement.style.display = 'none';
         bgInfoElement.style.display = 'flex';
         eduInfoElement.style.display = 'none';
@@ -248,20 +255,22 @@ function bginfo() {
         myApproachElement.style.display = 'none';
     } else {
         bgInfoElement.style.display = 'none';
+        personalInfoElement.style.display = 'flex';
     }
 }
   function eduinfo(){
       main_container.style.transition='all 0.5s ease-in-out';
       if (eduInfoElement.style.display === 'none') {
           personalInfoElement.style.display = 'none';
-        bgInfoElement.style.display = 'none';
-        eduInfoElement.style.display = 'flex';
-        skillInfoElement.style.display = 'none';
-        myApproachElement.style.display = 'none';
-    } else {
-        eduInfoElement.style.display = 'none';
-    }
-}
+          bgInfoElement.style.display = 'none';
+          eduInfoElement.style.display = 'flex';
+          skillInfoElement.style.display = 'none';
+          myApproachElement.style.display = 'none';
+        } else {
+          eduInfoElement.style.display = 'none';
+          personalInfoElement.style.display = 'flex';
+        }
+      }
 function skill_info(){
     if (skillInfoElement.style.display === 'none') {
         personalInfoElement.style.display = 'none';
@@ -271,19 +280,34 @@ function skill_info(){
         myApproachElement.style.display = 'none';
     } else {
         skillInfoElement.style.display = 'none';
+        personalInfoElement.style.display = 'flex';
+      }
     }
-}
 function my_approach(){
-    if (myApproachElement.style.display === 'none') {
+  if (myApproachElement.style.display === 'none') {
         personalInfoElement.style.display = 'none';
         bgInfoElement.style.display = 'none';
         eduInfoElement.style.display = 'none';
         skillInfoElement.style.display = 'none';
         myApproachElement.style.display = 'flex';
-    } else {
+      } else {
         myApproachElement.style.display = 'none';
+        personalInfoElement.style.display = 'flex';
+      }
     }
-}
+    function change_desgn2(){
+      const about_btns = document.getElementById('btn-1');
+      
+      // Apply the transition to the element
+      about_btns.style.transition = 'all 0.5s ease-in-out';
+      
+      if (about_btns.style.display === 'none') {
+        about_btns.style.display='flex'
+      } 
+      else {
+        about_btns.style.display='none'
+      }
+    }
 
 
 </script>

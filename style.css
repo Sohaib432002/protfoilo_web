@@ -272,6 +272,7 @@ body {
     right: 0;
     margin: 27px;
     padding: 0px;
+    display: none;
   }
   .nav_btn{
     padding: 1px;

@@ -30,7 +30,7 @@
   <div class="heading">
     <h1><span style="color: red; font: 1rem ;">About</span></h1>
   </div>
-  <div class="nav_btn" onclick="change_desgn2()">
+  <div class="nav_btn" id="nav_btn" onclick="change_desgn2()">
     <span></span>
     <span></span>
     <span></span>
@@ -40,11 +40,11 @@
 
   <div class="main_container" id="main_container">
     <div class="btns_about">
-        <button onclick="personalinfo()">Personal Information</button>
-        <button onclick="bginfo()">Personal Background</button>
-        <button onclick="eduinfo()">Educational Background</button>
-        <button onclick="skill_info()">Skills</button>
-        <button onclick="my_approach()">My Approach</button>
+      <button onclick="personalinfo()">Personal Information</button>
+      <button onclick="bginfo()">Personal Background</button>
+      <button onclick="eduinfo()">Educational Background</button>
+      <button onclick="skill_info()">Skills</button>
+      <button onclick="my_approach()">My Approach</button>
     </div>
     <div class="personal_info" id="personal_info">
       <div class="heading s_heading">
@@ -72,63 +72,64 @@
       </div>
       <div class="personal_background_details">
         <p>My name is Sohaib, and I am a passionate web developer specializing in both front-end and back-end development. I have a strong proficiency in HTML and CSS for front-end design and often utilize Django for back-end development.
-<br>
-          I completed my matriculation at F.G Fazaia School and pursued my intermediate studies in ICS at ARF College, PAF. Currently, I am advancing my knowledge by pursuing a BS in Mathematics from Namal University.</p>
+          <br>
+          I completed my matriculation at F.G Fazaia School and pursued my intermediate studies in ICS at ARF College, PAF. Currently, I am advancing my knowledge by pursuing a BS in Mathematics from Namal University.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="edu_bg" id="edu_bg">
-    <div class="heading s_heading">
-      <h1><span style="color: red; font: 2rem ;">Educational Background</span></h1>
-    </div>
-    <div class="edu_bg_details">
-      <ul>
-        <li>Matriculation: <span style="color: red; font-weight: bold;">SSC</span> <br>
+    <div class="edu_bg" id="edu_bg">
+      <div class="heading s_heading">
+        <h1><span style="color: red; font: 2rem ;">Educational Background</span></h1>
+      </div>
+      <div class="edu_bg_details">
+        <ul>
+          <li>Matriculation: <span style="color: red; font-weight: bold;">SSC</span> <br>
             <span style="color: yellow; font-weight: 700;">I completed my matriculation from F.G Fazaia School with a 74% score.</span>
-        </li>
-        <li>Intermediate: <span style="color: red; font-weight: bold;">HSSC</span> <br>
+          </li>
+          <li>Intermediate: <span style="color: red; font-weight: bold;">HSSC</span> <br>
             <span style="color: yellow; font-weight: 700;">I pursued Intermediate in Computer Science at Abdul Razaq Fazaia College, achieving an 88% score.</span>
-        </li>
-        <li>University: <span style="color: red; font-weight: bold;">Namal University</span> <br>
+          </li>
+          <li>University: <span style="color: red; font-weight: bold;">Namal University</span> <br>
             <span style="color: yellow; font-weight: 700;">I earned my BSc in Mathematics from Namal College, graduating with a B+ grade.</span>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="skill_bg" id="skill_bg">
-    <div class="heading s_heading">
-      <h1><span style="color: red; font: 2rem ;">Skills</span></h1>
+    <div class="skill_bg" id="skill_bg">
+      <div class="heading s_heading">
+        <h1><span style="color: red; font: 2rem ;">Skills</span></h1>
+      </div>
+      <div class="skill_bg_details">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>Python</li>
+          <li>Django</li>
+        </ul>
+      </div>
     </div>
-    <div class="skill_bg_details">
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-        <li>Python</li>
-        <li>Django</li>
-      </ul>
-    </div>
-  </div>
-<div class="my_app_bg" id="my_app_bg">
-  <div class="heading s_heading">
-    <h1><span style="color: red; font: 2rem ;">My Applications</span></h1>
-  </div>
-  <div class="my_app_bg_details">
-    <p>I believe in writing clean, maintainable code that follows best practices. Whether I’m working on a small personal project or a large-scale web application, I always strive for excellence and attention to detail.</p>
-    <h4>What I Offer</h4>
-    <ul>
-        <li>Custom Web Solutions</li>
-        <li>Data Analysis</li>
-        <li>Ongoing Support</li>
-    </ul>
+    <div class="my_app_bg" id="my_app_bg">
+      <div class="heading s_heading">
+        <h1><span style="color: red; font: 2rem ;">My Applications</span></h1>
+      </div>
+      <div class="my_app_bg_details">
+        <p>I believe in writing clean, maintainable code that follows best practices. Whether I’m working on a small personal project or a large-scale web application, I always strive for excellence and attention to detail.</p>
+        <h4>What I Offer</h4>
+        <ul>
+          <li>Custom Web Solutions</li>
+          <li>Data Analysis</li>
+          <li>Ongoing Support</li>
+        </ul>
 
-</div>
-<div class="btn_touch">
-  <button onclick="contact_page()">Get In Touch</button>
-</div>
-  
-  </div>
+      </div>
+      <div class="btn_touch">
+        <button onclick="contact_page()">Get In Touch</button>
+      </div>
+
+    </div>
   </div>
 
 
@@ -136,9 +137,6 @@
 
   <!-- footer html -->
   <div class="footer-bottom">
-    <div class="social_media_btn">
-      <button onclick="change_desgn()">About Me</button>
-    </div>
     <p>&copy; 2024 Sohaib. All rights reserved.</p>
     <div class="social_media_btn">
       <button onclick="social_btns()">Social Media</button>
@@ -146,12 +144,10 @@
   </div>
 
   <div class="social_btns_list" id="social_btns_list">
-    <a href="https://www.instagram.com/sohaib_2000/"><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/sohaib-islam-2000"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/sohaib-islam-2000"><i class="fab fa-linkedin"></i></a>
-    <a href="https://twitter.com/sohaib_2000"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.facebook.com/sohaib_2000"><i class="fab fa-facebook-square"></i></a>
-
+    <a href="https://www.instagram.com/sohaib432002/"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/Sohaib432002"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/muhammad-sohaib-maqsood-72b785244/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100071371093782"><i class="fab fa-facebook-square"></i></a>
 
   </div>
 
@@ -183,12 +179,12 @@
   }
 
   function Home() {
-    
+
     const card4 = document.getElementById('card4');
     card4.style.transition = 'all 0s ease-in-out';
     card4.style.transform = '';
     window.location.href = "index.html";
-    
+
   }
 
 
@@ -197,7 +193,7 @@
     const about_btns = document.getElementById('btn-1');
 
     // Apply the transition to the element
-    about_btns.style.transition = 'all 0.5s ease-in-out';
+    about_btns.style.transition = 'all 0.3s ease-in-out';
 
     if (about_btns.style.right === '-10%') {
       about_btns.style.right = '-1%';
@@ -215,7 +211,7 @@
     const social_btns = document.getElementById('social_btns_list');
 
     // Apply the transition to the element
-    social_btns.style.transition = 'all 0.5s ease-in-out';
+    social_btns.style.transition = 'all 0.3s ease-in-out';
 
     if (social_btns.style.left === '-10px') {
       social_btns.style.left = '-100px';
@@ -223,93 +219,103 @@
       social_btns.style.left = '-10px';
     }
   }
-var personalInfoElement = document.getElementById('personal_info');
-var bgInfoElement = document.getElementById('Personal_background');
-var eduInfoElement = document.getElementById('edu_bg');
-var skillInfoElement = document.getElementById('skill_bg');
-var myApproachElement = document.getElementById('my_app_bg');
-var main_container=document.getElementById('main_container');
+  var personalInfoElement = document.getElementById('personal_info');
+  var bgInfoElement = document.getElementById('Personal_background');
+  var eduInfoElement = document.getElementById('edu_bg');
+  var skillInfoElement = document.getElementById('skill_bg');
+  var myApproachElement = document.getElementById('my_app_bg');
+  var main_container = document.getElementById('main_container');
 
-function personalinfo() {
-    main_container.style.transition='all 0.5s ease-in-out';
+  function personalinfo() {
+    main_container.style.transition = 'all 0.5s ease-in-out';
     if (personalInfoElement.style.display === 'none') {
-        personalInfoElement.style.display = 'flex';
-        bgInfoElement.style.display = 'none';
-        eduInfoElement.style.display = 'none';
-        skillInfoElement.style.display = 'none';
-        myApproachElement.style.display = 'none';
-      } else {
-        personalInfoElement.style.display = 'none';
-        personalInfoElement.style.display = 'flex';
-      }
-      
-    }
-    
-function bginfo() {
-    
-  if (bgInfoElement.style.display === 'none') {
-        personalInfoElement.style.display = 'none';
-        bgInfoElement.style.display = 'flex';
-        eduInfoElement.style.display = 'none';
-        skillInfoElement.style.display = 'none';
-        myApproachElement.style.display = 'none';
+      personalInfoElement.style.display = 'flex';
+      bgInfoElement.style.display = 'none';
+      eduInfoElement.style.display = 'none';
+      skillInfoElement.style.display = 'none';
+      myApproachElement.style.display = 'none';
     } else {
-        bgInfoElement.style.display = 'none';
-        personalInfoElement.style.display = 'flex';
+      personalInfoElement.style.display = 'none';
+      personalInfoElement.style.display = 'flex';
     }
-}
-  function eduinfo(){
-      main_container.style.transition='all 0.5s ease-in-out';
-      if (eduInfoElement.style.display === 'none') {
-          personalInfoElement.style.display = 'none';
-          bgInfoElement.style.display = 'none';
-          eduInfoElement.style.display = 'flex';
-          skillInfoElement.style.display = 'none';
-          myApproachElement.style.display = 'none';
-        } else {
-          eduInfoElement.style.display = 'none';
-          personalInfoElement.style.display = 'flex';
-        }
-      }
-function skill_info(){
+
+  }
+
+  function bginfo() {
+
+    if (bgInfoElement.style.display === 'none') {
+      personalInfoElement.style.display = 'none';
+      bgInfoElement.style.display = 'flex';
+      eduInfoElement.style.display = 'none';
+      skillInfoElement.style.display = 'none';
+      myApproachElement.style.display = 'none';
+    } else {
+      bgInfoElement.style.display = 'none';
+      personalInfoElement.style.display = 'flex';
+    }
+  }
+
+  function eduinfo() {
+    main_container.style.transition = 'all 0.5s ease-in-out';
+    if (eduInfoElement.style.display === 'none') {
+      personalInfoElement.style.display = 'none';
+      bgInfoElement.style.display = 'none';
+      eduInfoElement.style.display = 'flex';
+      skillInfoElement.style.display = 'none';
+      myApproachElement.style.display = 'none';
+    } else {
+      eduInfoElement.style.display = 'none';
+      personalInfoElement.style.display = 'flex';
+    }
+  }
+
+  function skill_info() {
     if (skillInfoElement.style.display === 'none') {
-        personalInfoElement.style.display = 'none';
-        bgInfoElement.style.display = 'none';
-        eduInfoElement.style.display = 'none';
-        skillInfoElement.style.display = 'flex';
-        myApproachElement.style.display = 'none';
+      personalInfoElement.style.display = 'none';
+      bgInfoElement.style.display = 'none';
+      eduInfoElement.style.display = 'none';
+      skillInfoElement.style.display = 'flex';
+      myApproachElement.style.display = 'none';
     } else {
-        skillInfoElement.style.display = 'none';
-        personalInfoElement.style.display = 'flex';
-      }
+      skillInfoElement.style.display = 'none';
+      personalInfoElement.style.display = 'flex';
     }
-function my_approach(){
-  if (myApproachElement.style.display === 'none') {
-        personalInfoElement.style.display = 'none';
-        bgInfoElement.style.display = 'none';
-        eduInfoElement.style.display = 'none';
-        skillInfoElement.style.display = 'none';
-        myApproachElement.style.display = 'flex';
-      } else {
-        myApproachElement.style.display = 'none';
-        personalInfoElement.style.display = 'flex';
-      }
-    }
-    function change_desgn2(){
-      const about_btns = document.getElementById('btn-1');
-      
-      // Apply the transition to the element
-      about_btns.style.transition = 'all 0.5s ease-in-out';
-      
-      if (about_btns.style.display === 'none') {
-        about_btns.style.display='flex'
-      } 
-      else {
-        about_btns.style.display='none'
-      }
-    }
+  }
 
+  function my_approach() {
+    if (myApproachElement.style.display === 'none') {
+      personalInfoElement.style.display = 'none';
+      bgInfoElement.style.display = 'none';
+      eduInfoElement.style.display = 'none';
+      skillInfoElement.style.display = 'none';
+      myApproachElement.style.display = 'flex';
+    } else {
+      myApproachElement.style.display = 'none';
+      personalInfoElement.style.display = 'flex';
+    }
+  }
 
+  function change_desgn2() {
+    const about_btns = document.getElementById('btn-1');
+    const nav_btn=document.getElementById('nav_btn');
+
+    if (about_btns.style.display === 'flex') {
+      about_btns.style.transform = 'translate(360deg)';
+      nav_btn.style.transition='all 0.5s ease-in-out';
+      nav_btn.style.transform='rotate(360deg)';
+      
+      setTimeout(() => {
+        about_btns.style.display = 'none';
+        about_btns.style.transform = 'none';
+      }, 3);
+    } else {
+      about_btns.style.display = 'flex';
+      nav_btn.style.transition='all 0.5s ease-in-out';
+      nav_btn.style.transform='rotate(270deg)';
+      about_btns.offsetHeight;
+      about_btns.style.transform = 'rotate(360deg) ';
+    }
+  }
 </script>
 
 </html>

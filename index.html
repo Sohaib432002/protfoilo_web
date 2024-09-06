@@ -36,7 +36,7 @@
     <div class="h-text" id="h-text2">
       <h1>Hi! It's <span style="color: red;">Sohaib</span></h1>
     </div>
-    <div class="btn-1" id="btn-1">
+    <div class="btn-1" id="btn-1" >
       <div class="card1" id="card1"><button onclick="contact_page()">Contact</button></div>
       <div class="card2" id="card2"><button onclick="service_page()">Service</button></div>
       <div class="card3" id="card3"><button onclick="about_page()">About</button></div>
@@ -49,13 +49,11 @@
     </div>
 
     <div class="social_btns_list" id="social_btns_list">
-      <a href="https://www.instagram.com/sohaib_2000/"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/sohaib-islam-2000"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/sohaib-islam-2000"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/sohaib_2000"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.facebook.com/sohaib_2000"><i class="fab fa-facebook-square"></i></a>
-
-
+      <a href="https://www.instagram.com/sohaib432002/"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Sohaib432002"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/muhammad-sohaib-maqsood-72b785244/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100071371093782"><i class="fab fa-facebook-square"></i></a>
+  
     </div>
 
 
@@ -110,7 +108,7 @@
       const social_btns = document.getElementById('social_btns_list');
 
       // Apply the transition to the element
-      social_btns.style.transition = 'all 0.5s ease-in-out';
+      social_btns.style.transition = 'all 0.2s ease-in-out';
 
       if (social_btns.style.left === '-10px') {
         social_btns.style.left = '-100px';
@@ -122,7 +120,7 @@
       const about_btns = document.getElementById('btn-1');
       
       // Apply the transition to the element
-      about_btns.style.transition = 'all 0.5s ease-in-out';
+      about_btns.style.transition = 'all 0.2s ease-in-out';
       
       if (about_btns.style.right === '-156px') {
         about_btns.style.right = '-5px';
@@ -135,15 +133,17 @@
     function change_desgn2(){
       const about_btns = document.getElementById('btn-1');
       
-      // Apply the transition to the element
-      about_btns.style.transition = 'all 0.5s ease-in-out';
-      
-      if (about_btns.style.display === 'none') {
-        about_btns.style.display='flex'
-      } 
-      else {
-        about_btns.style.display='none'
-      }
+      if (about_btns.style.display === 'flex') {
+  about_btns.style.transform = 'rotate(360deg)';
+  setTimeout(() => {
+    about_btns.style.display = 'none';
+    about_btns.style.transform = 'none'; 
+  }, 300); 
+} else {
+  about_btns.style.display = 'flex';
+  about_btns.offsetHeight; 
+  about_btns.style.transform = 'rotate(360deg)';
+}
     }
   </script>
   

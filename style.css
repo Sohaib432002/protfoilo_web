@@ -140,6 +140,9 @@ body {
     top:47px;
 
   }
+  #btn-1 {/* Initially hide the element */
+    transition: transform 0.9s ease; /* Smooth transition for the transform property */
+  }
   .dis_btn{
     position: absolute;
     background-color: transparent;

@@ -313,7 +313,6 @@ video {
       font-size: 16px;
     }
     .btn-1{
-      display: flex;
       position: static;
       border: 2px solid white;
       border-radius: 23px;
@@ -382,7 +381,9 @@ video {
     .img_logo img{
       width: 85px;
       position: absolute;
+
     }
+
     
     .heading{
         padding: 0px;
@@ -432,21 +433,16 @@ video {
     .social_btns_list{
         top: 161px;
     }
-    .img_logo img{
-      top: -21px;
-    }
-    .card-1,.card-2{
-      flex-wrap: nowrap;
-    }
-    .card-1 button,.card-2 button{
-      border-radius: 12px;
-    }
+    
     .social_media_btn button {
       font-size: 15px;
   }
   .footer-bottom p {
     font-size: 16px;
   }
+  .img_logo img {
+    top: 31px;
+}
   
     
   }
@@ -469,7 +465,9 @@ video {
     }
     .img_logo img{
       width: 50px;
+      top: 23px;
     }
+
     .h-text2{
       font-size: 10px;
     }
@@ -544,8 +542,9 @@ video {
         padding-top: 0px;
     }
     
-    .heading h1{
-        font-size: 30px;
+    .heading h1 {
+        font-size: 51px;
+        margin-top: 97px;
     }
     .footer-bottom {
         padding-top: 48px;
@@ -556,39 +555,34 @@ video {
     .card-1,.card-2{
       flex-direction: column;
     }
-    .text_card1 button{
-      font-size: 41px;
-      margin: 33px 0px;
-      border-radius: 9px;
-      padding: 26px;
-    }
-    .img_card1 img{
-      width: 185px;
-    }
+    
     .footer-bottom p {
       font-size: 8px;
   }
-    .img_card2 img{
-      width: 79%;
-      margin: 0px;
-    }
-    .text_card2 button{
-      
-      padding: 26px;
-      font-size: 37px;
-      margin: 30px;
-      border-radius: 9px;
-    }
-    .card-2 {
-      margin-top: 66px;
+
+  .img_logo img{
+    top: 25px;
   }
+  
   .social_media_btn button {
     font-size: 9px;
   }
+  .form{
+    font-size: 13px;
+}
+.submit_btn button{
+    font-size: 10px;
+}
+.form input{
+    font-size: 14px;
+    padding: 0px;
+}
+.form form{
+    margin-top: 18px;
+    padding: 23px 45px;
+}
     
-  }
-   
-  
+}
   
   @media (max-width: 300px) {
     
@@ -598,18 +592,29 @@ video {
     }
     .form form{
         width: 100%;
+        padding: 20px;
+        margin: 0px 33px;   
     }
     .form{
         font-size: 13px;
     }
     .submit_btn button{
-        font-size: 13px;
+        font-size: 10px;
+    }
+    .form input{
+        font-size: 14px;
+        padding: 0px;
+    }
+    .form button{
+        margin-top: 18px;
+        padding: 2px;
+        border-radius: 5px;
     }
     .heading h1{
-        font-size: px;
+        font-size: 29px;
     }
     .heading{
-      margin-top: 67px;
+      margin-top: 0px;
     }
     
     .text_card1 button{
@@ -634,5 +639,9 @@ video {
   }
   .social_media_btn button {
     font-size: 8px;
-  }
+    }   
+    .img_logo img{
+        top: 24px;
+        left: -7px;
+                        }
 }

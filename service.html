@@ -19,7 +19,7 @@
       <div class="btns_intro">
         <button id="btn-1_button_about" class="btn-1_about" onclick="change_desgn()"> About Me</button>
       </div>
-      <div class="nav_btn" onclick="change_desgn2()">
+      <div class="nav_btn" id="nav_btn" onclick="change_desgn2()">
         <span></span>
         <span></span>
         <span></span>
@@ -61,13 +61,11 @@
       </div>
 
       <div class="social_btns_list" id="social_btns_list">
-        <a href="https://www.instagram.com/sohaib_2000/"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/sohaib-islam-2000"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/sohaib-islam-2000"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/sohaib_2000"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.facebook.com/sohaib_2000"><i class="fab fa-facebook-square"></i></a>
-  
-  
+        <a href="https://www.instagram.com/sohaib432002/"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Sohaib432002"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-sohaib-maqsood-72b785244/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100071371093782"><i class="fab fa-facebook-square"></i></a>
+    
       </div>
 </body>
 <script>
@@ -107,7 +105,7 @@
       const about_btns = document.getElementById('btn-1');
       
       // Apply the transition to the element
-      about_btns.style.transition = 'all 0.5s ease-in-out';
+      about_btns.style.transition = 'all 0.2s ease-in-out';
       
       if (about_btns.style.right === '-10%') {
         about_btns.style.right = '-1%';
@@ -124,7 +122,7 @@
       const social_btns = document.getElementById('social_btns_list');
 
       // Apply the transition to the element
-      social_btns.style.transition = 'all 0.5s ease-in-out';
+      social_btns.style.transition = 'all 0.3s ease-in-out';
 
       if (social_btns.style.left === '-10px') {
         social_btns.style.left = '-100px';
@@ -136,20 +134,27 @@
     function service_page_web(){
       window.location.href = "web_deve.html";
     }
-        function change_desgn2(){
-      const about_btns = document.getElementById('btn-1');
+    function change_desgn2() {
+    const about_btns = document.getElementById('btn-1');
+    const nav_btn=document.getElementById('nav_btn');
+
+    if (about_btns.style.display === 'flex') {
+      about_btns.style.transform = 'translate(360deg)';
+      nav_btn.style.transition='all 0.5s ease-in-out';
+      nav_btn.style.transform='rotate(360deg)';
       
-      // Apply the transition to the element
-      about_btns.style.transition = 'all 0.5s ease-in-out';
-      
-      if (about_btns.style.display === 'none') {
-        about_btns.style.display='flex'
-      } 
-      else {
-        about_btns.style.display='none'
-      }
+      setTimeout(() => {
+        about_btns.style.display = 'none';
+        about_btns.style.transform = 'none';
+      }, 3);
+    } else {
+      about_btns.style.display = 'flex';
+      nav_btn.style.transition='all 0.5s ease-in-out';
+      nav_btn.style.transform='rotate(270deg)';
+      about_btns.offsetHeight;
+      about_btns.style.transform = 'rotate(360deg) ';
     }
+  }
 
   </script>
-</script>
 </html>

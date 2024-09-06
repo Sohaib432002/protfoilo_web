@@ -282,7 +282,12 @@ video {
   background-color: aliceblue;
 }
 
-
+.text_card2 button,.text_card1 button{
+  border-radius: 0px;
+background-color: transparent;
+box-shadow: 10px 9px 0px 0px gray;
+padding: 10px;
+}
 
 
 
@@ -345,6 +350,12 @@ video {
   .btn-1{
     flex-direction: column;
     z-index: 3;
+  }
+  .text_card2 button,.text_card1 button{
+    border-radius: 0px;
+  background-color: transparent;
+  box-shadow: 10px 9px 0px 0px gray;
+  padding: 10px;
   }
 }
 
@@ -432,7 +443,12 @@ video {
 .footer-bottom p {
   font-size: 16px;
 }
-
+.text_card2 button,.text_card1 button{
+  border-radius: 0px;
+background-color: transparent;
+box-shadow: 10px 9px 0px 0px gray;
+padding: 10px;
+}
   
 }
 @media (max-width: 650px) {
@@ -499,9 +515,11 @@ video {
 flex-direction: column;
 }
 .text_card1 button{
-font-size: 41px;
+font-size: 30px;
 margin: 33px 0px;
-border-radius: 9px;
+border-radius: 0px;
+background-color: transparent;
+box-shadow: 10px 9px 0px 0px gray;
 padding: 10px;
 }
 .img_card2 img{
@@ -511,9 +529,11 @@ padding: 10px;
 .text_card2 button{
 
 padding: 10px;
-font-size: 37px;
+font-size: 30px;
 margin: 30px;
-border-radius: 9px;
+border-radius: 0px;
+background-color: transparent;
+box-shadow: 10px 9px 0px 0px gray
 }
 .card-2 {
 margin-top: 66px;
@@ -542,10 +562,12 @@ margin-top: 66px;
     flex-direction: column;
   }
   .text_card1 button{
-    font-size: 41px;
+    font-size: 30px;
     margin: 33px 0px;
-    border-radius: 9px;
     padding: 10px;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: 10px 9px 0px 0px gray
   }
   .img_card1 img{
     width: 160px;
@@ -560,9 +582,11 @@ margin-top: 66px;
   .text_card2 button{
     
     padding: 10px;
-    font-size: 37px;
+    font-size: 30px;
     margin: 30px;
-    border-radius: 9px;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: 10px 9px 0px 0px gray
   }
   .card-2 {
     margin-top: 66px;
@@ -585,9 +609,11 @@ margin-top: 66px;
   }
   
   .text_card1 button{
-    font-size: 41px;
-    margin: 33px 0px;
-    border-radius: 9px;
+    font-size: 25px;
+    margin: 33px 0px; 
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: 10px 9px 0px 0px gray
   }
   .img_card1 img{
     width: 185px;
@@ -597,9 +623,11 @@ margin-top: 66px;
   }
   .text_card2 button{
     padding: 5px;
-    font-size: 37px;
+    font-size: 25px;
     margin: 30px;
-    border-radius: 9px;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: 10px 9px 0px 0px gray;
   }
   .card-2 {
     margin-top: 66px;

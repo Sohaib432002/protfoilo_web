@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | myportfolio</title>
-  <link rel="icon" type="image/x-icon" href="./images/images-removebg-preview (1).png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="../images/images-removebg-preview (1).png">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="index.js"></script>
   <script src="path/to/neonCursor-library.js"></script>
@@ -14,10 +14,10 @@
 </head>
 
 <body>
-  <video autoplay loop muted src="./Dark Background Web.mp4"></video>
+  <video autoplay loop muted src="../videos/Dark Background Web.mp4"></video>
     <div class="dis_btn">
       <div class="img_logo">
-        <img src="./images/images-removebg-preview (1).png" alt="">
+        <img src="../images/images-removebg-preview (1).png" alt="">
       </div>
     </div>
 <div class="nav_btn" onclick="change_desgn2()">
@@ -28,7 +28,7 @@
 
   <div class="heading-cont" id="heading-cont">
     <div class="img" id="img">
-      <img src="./images/png-transparent-icon-user-male-avatar-business-person-profile.png" alt="my_pic">
+      <img src="../images/png-transparent-icon-user-male-avatar-business-person-profile.png" alt="my_pic">
     </div>
     <div class="h-text2" id="h-text">
       <h1>Welcome to my <span style="color: red;">Website</span></h1>
@@ -38,6 +38,7 @@
     </div>
     <div class="btn-1" id="btn-1" >
       <div class="card1" id="card1"><button onclick="contact_page()">Contact</button></div>
+      <div class="card1" id="card1"><button onclick="projects_page()">Projects</button></div>
       <div class="card2" id="card2"><button onclick="service_page()">Service</button></div>
       <div class="card3" id="card3"><button onclick="about_page()">About</button></div>
       <div class="card4" id="card4"><button onclick="Home()">Home</button></div>  
@@ -145,6 +146,9 @@
   about_btns.offsetHeight; 
   about_btns.style.transform = 'rotate(360deg)';
 }
+    }
+    function projects_page(){
+      window.location.href = "projects.html";
     }
   </script>
   

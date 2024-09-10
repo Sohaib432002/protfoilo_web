@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> About | myportfolio </title>
-  <link rel="icon" type="image/x-icon" href="./images/images-removebg-preview (1).png">
-  <link rel="stylesheet" href="about_css.css">
+  <link rel="icon" type="image/x-icon" href="../images/images-removebg-preview (1).png">
+  <link rel="stylesheet" href="../css/about_css.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="path/to/neonCursor-library.js"></script>
-  <video style="width: 100%;" autoplay loop muted src="./Dark Background Web.mp4"> </video>
+  <video style="width: 100%;" autoplay loop muted src="../videos/Dark Background Web.mp4"> </video>
 </head>
 
 <body>
   <div class="dis_btn">
     <div class="img_logo">
-      <img src="./images/images-removebg-preview (1).png" alt="">
+      <img src="../images/images-removebg-preview (1).png" alt="">
     </div>
   </div>
   <div class="btns_intro">
@@ -23,6 +23,7 @@
   </div>
   <div class="btn-1" id="btn-1">
     <div class="card1" id="card1"><button onclick="contact_page()">Contact</button></div>
+    <div class="card1" id="card1"><button onclick="projects_page()">Projects</button></div>
     <div class="card2" id="card2"><button onclick="service_page()">Service</button></div>
     <div class="card3" id="card3"><button onclick="about_page()">About</button></div>
     <div class="card4" id="card4"><button onclick="Home()">Home</button></div>
@@ -51,7 +52,7 @@
         <h1><span style="color: red; font: 2rem ;">Personal information</span></h1>
       </div>
       <div class="personal_info_details">
-        <img src="./images/png-transparent-icon-user-male-avatar-business-person-profile.png" alt="my_pic">
+        <img src="../images/png-transparent-icon-user-male-avatar-business-person-profile.png" alt="my_pic">
         <ul>
           <li>Name: <span style="color: red; font-weight: bolder;">Muhammad Sohaib Maqsood </span></li>
           <li>Father Name: <span style="color: red; font-weight: bolder;">Maqsood Ahmed </span></li>
@@ -104,8 +105,6 @@
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
-          <li>PHP</li>
-          <li>MySQL</li>
           <li>Python</li>
           <li>Django</li>
         </ul>
@@ -186,7 +185,9 @@
     window.location.href = "index.html";
 
   }
-
+  function projects_page(){
+      window.location.href = "projects.html";
+  }
 
 
   function change_desgn() {

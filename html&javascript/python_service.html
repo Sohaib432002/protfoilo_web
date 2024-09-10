@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Python | Service | myportfolio</title>
-  <link rel="icon" type="image/x-icon" href="./images/images-removebg-preview (1).png">
-  <link rel="stylesheet" href="python_service.css">
+  <link rel="icon" type="image/x-icon" href="../images/images-removebg-preview (1).png">
+  <link rel="stylesheet" href="../css/python_service.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="path/to/neonCursor-library.js"></script>
-  <video style="width: 100%;" autoplay loop muted src="./Dark Background Web.mp4"> </video>
+  <video style="width: 100%;" autoplay loop muted src="../videos/ Background Web.mp4"> </video>
 </head>
 
 <body>
@@ -28,6 +28,7 @@
   </div>
   <div class="btn-1" id="btn-1">
     <div class="card1" id="card1"><button onclick="contact_page()">Contact</button></div>
+    <div class="card1" id="card1"><button onclick="projects_page()">Projects</button></div>
     <div class="card2" id="card2"><button onclick="service_page()">Service</button></div>
     <div class="card3" id="card3"><button onclick="about_page()">About</button></div>
     <div class="card4" id="card4"><button onclick="Home()">Home</button></div>
@@ -47,18 +48,18 @@
     <div class="img_python ">
 
       <div class="imgs1">
-        <video src="./Python in 100 Seconds.mp4" autoplay loop muted id="background-video" controls></video>
+        <video src="../videos/Python in 100 Seconds.mp4" autoplay loop muted id="background-video" controls></video>
         <div class="img_details img1" id="content1">
-          <img src="./images/data-science-projects.jpg" alt="img_datasciecne">
+          <img src="../images/data-science-projects.jpg" alt="img_datasciecne">
         </div>
         <div class="img_details img2" id="content2">
-          <img src="./images/data_analyticstrendsmin.png" alt="img_anayltics">
+          <img src="../images/data_analyticstrendsmin.png" alt="img_anayltics">
         </div>
         <div class="img_details img3 " id="content3">
-          <img src="./images/Python-and-Django-for-Web-Development.jpg" alt="img_django">
+          <img src="../images/Python-and-Django-for-Web-Development.jpg" alt="img_django">
         </div>
         <div class="img_details img4" id="content4">
-          <img src="./images/What-is-Data-Visualization-Blog-Header.jpg" alt="img_visual">
+          <img src="../images/What-is-Data-Visualization-Blog-Header.jpg" alt="img_visual">
         </div>
 
       </div>
@@ -298,6 +299,9 @@ if (img4.length > 0) {
       setTimeout(typeText4, 25); // Adjust speed by changing the timeout value
     }
   }
+  function projects_page(){
+      window.location.href = "projects.html";
+    }
   function change_desgn2() {
     const about_btns = document.getElementById('btn-1');
     const nav_btn=document.getElementById('nav_btn');

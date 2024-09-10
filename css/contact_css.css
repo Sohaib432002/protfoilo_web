@@ -51,6 +51,7 @@ video {
     /* Ensures the video stays behind other content */
 }
 
+
 .heading {
     display: flex;
     justify-content: center;

@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Web Development | Service | myportfolio</title>
-  <link rel="icon" type="image/x-icon" href="./images/images-removebg-preview (1).png">
-  <link rel="stylesheet" href="web_deve.css">
+  <title> Contact | myportfolio </title>
+  <link rel="icon" type="image/x-icon" href="../images/images-removebg-preview (1).png">
+  <link rel="stylesheet" href="../css/contact_css.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="path/to/neonCursor-library.js"></script>
-  <video style="width: 100%;" autoplay loop muted src="./Dark Background Web.mp4"> </video>
+  <video style="width: 100%;" autoplay loop muted src="../videos/Dark Background Web.mp4"> </video>
 </head>
 
 <body>
   <div class="dis_btn">
     <div class="img_logo">
-      <img src="./images/images-removebg-preview (1).png" alt="">
+      <img src="../images/images-removebg-preview (1).png" alt="">
     </div>
   </div>
   <div class="nav_btn" id="nav_btn" onclick="change_desgn2()">
@@ -28,47 +28,45 @@
   </div>
   <div class="btn-1" id="btn-1">
     <div class="card1" id="card1"><button onclick="contact_page()">Contact</button></div>
+    <div class="card1" id="card1"><button onclick="projects_page()">Projects</button></div>
     <div class="card2" id="card2"><button onclick="service_page()">Service</button></div>
     <div class="card3" id="card3"><button onclick="about_page()">About</button></div>
     <div class="card4" id="card4"><button onclick="Home()">Home</button></div>
   </div>
   <div class="heading">
-    <h1><span style="color: red; font: 2rem ;">Web Development </span></h1>
+    <h1><span style="color: red; font: 2rem ;">Contact Us</span></h1>
   </div>
   <!-- end of header -->
-  <div class="heading_para">
-    <h1>Web Development</h1>
-    <p>I specialize in creating responsive and user-friendly websites with a strong focus on HTML and CSS. My skills ensure that your website performs seamlessly across all devices, from desktops to smartphones. With a solid understanding of JavaScript, I can add dynamic features like interactive forms and animations, enhancing user engagement. I prioritize writing clean, maintainable code, and I stay updated with the latest trends to deliver modern, scalable websites that align with your brand and future needs.</p>
-  </div>
-  <div class="continer">
-    <div class="text_con">
-      <h1>Key Highlights:</h1>
-      <div class="img_con">
 
-      <ul>
-        <li>Responsive Design</li>
-        <li>Modern CSS Techniques:</li>
-        <li>Interactive Features</li>
-        <li>Clean Code Practices</li>
-        <li>Up-to-Date with Trends</li>
-      </ul>
-      <div class="imges_">
-      <div class="img1"><img src="./images/png-transparent-logo-html5-brand-design-text-logo-number-thumbnail-removebg-preview.png" alt="html_logo"></div>
-        <div class="img2"><img src="./images/png-transparent-javascript-computer-icons-software-developer-cascading-style-sheets-javascript-logo-angle-text-rectangle-thumbnail-removebg-preview.png" alt="javacript_logo"></div>
-        <div class="img3"><img src="./images/png-transparent-css-logo-thumbnail-removebg-preview.png" alt="css_logo"></div>
-        <div class="img3"><img src="./images/png-clipart-django-web-development-web-framework-python-software-framework-django-text-trademark-thumbnail-removebg-preview.png" alt="django_logo"></div>
-      </div>
-    </div>
-  </div>
+  <div class="form">
+  
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="baf60a04-502e-4800-8238-a84d4c5c12ce">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+     <label for="name">Enter Your Name:</label>
+     <input type="text" name="name" required>
+     <label for="name">Enter Your Email:</label>
+     <input type="email" name="email" required>
+     <label for="name">Enter Your Message:</label>
+     <textarea name="message" class="fixed-textarea" required></textarea>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+<div class="submit_btn">
+    <button type="submit">Submit Form</button>
 </div>
+</form>
 
-
-
-
-
-  <!-- footer html -->
-  <div class="footer-bottom">
-
+</div>
+   <!-- footer html -->
+   <div class="footer-bottom">
+    
     <p>&copy; 2024 Sohaib. All rights reserved.</p>
     <div class="social_media_btn">
       <button onclick="social_btns()">Social Media</button>
@@ -111,11 +109,16 @@
   }
 
   function Home() {
+    
     const card4 = document.getElementById('card4');
     card4.style.transition = 'all 0s ease-in-out';
     card4.style.transform = '';
     window.location.href = "index.html";
+    
   }
+  function projects_page(){
+      window.location.href = "projects.html";
+    }
 
 
 

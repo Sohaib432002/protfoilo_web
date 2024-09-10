@@ -1,0 +1,529 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.8s ease-in-out;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensures the video stays behind other content */
+  }
+
+  .dis_btn{
+    position: absolute;
+    background-color: transparent;
+    top: 5%;
+    left: 2%;
+  }
+  .img_logo img{
+    width: 100px;
+  }
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    padding: 0px 117px;
+  }
+
+  .heading h1 {
+    color: red;
+    transition: all 0.8s ease-in-out;
+    font-size: 60px;
+    position: relative;
+    display: inline-block;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        3px 3px 0px rgba(0, 0, 0, 0.3),
+        5px 5px 0px rgba(0, 0, 0, 0.5),
+        7px 7px 0px rgba(0, 0, 0, 0.7),
+        9px 9px 0px rgba(0, 0, 0, 0.9);
+    transform: rotateY(-20deg);
+    -webkit-box-reflect: below -30px linear-gradient(transparent, #0005);
+    /* box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 25px #03e9f4, 0 0 100px #03e9f4; */
+    font-size: 102px;
+    font-weight: bolder;
+
+    color: antiquewhite;
+}
+.nav_btn{
+  position: absolute;
+  border: 2px solid;
+  right: 79px;
+  padding: 6px;
+  right: 65px;
+  top: 37px;
+  display: none;
+}
+.nav_btn span{
+  display: flex;
+    background-color: gray;
+    padding: 5px 24px;
+    margin: 5px;
+}
+.btn-1{
+    border: 2px solid;
+    width: 5%;
+    border-radius: 46px 0px 0px 46px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10%;
+    top:15%;
+
+  }
+
+.btn-1 button{
+    margin: 31px;
+    font-size: 26px;
+    padding: 16px;
+    background-color: transparent;
+    font-family: cursive;
+    color: aliceblue;
+    box-shadow: 6px 5px 0px 0px gray;
+    transition: all 0.8s ease-in-out;   
+  }
+  .btn-1 button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px gray;
+    transform: translate(6px,5px);
+    color: red;
+    display: block;
+    filter: drop-shadow(0 0 10px red);
+
+  }
+  .btns_intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0%;
+  }
+  .btns_intro button{
+  
+    margin: 31px;
+    font-size: 26px;
+    padding: 16px;
+    background-color: transparent;
+    font-family: cursive;
+    color: aliceblue;
+    box-shadow: 6px 5px 0px 0px gray;
+    transition: all 0.8s ease-in-out;  
+  }
+  
+  .btns_intro button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px gray;
+    transform: translate(6px,5px);
+    color: red;
+    display: block;
+    filter: drop-shadow(0 0 10px red);
+  }
+
+/* end of header */
+
+
+.proj_con{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    
+}
+.proj1{
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    justify-items: center;
+    filter: drop-shadow(0 0 6px #03e9f4);
+    background-image: url("./images/data-science-projects.jpg");
+    background-size: cover;
+    padding: 43px;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: black;
+    transition: all 0.4s ease-in-out;
+}
+.proj1:hover{
+    background-blend-mode: hard-light;
+    cursor: pointer;   
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+      padding-top: 113px;
+  }
+  .footer-bottom p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .social_media_btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .social_media_btn button{
+      padding: 4px 27px;
+      font-size: 14px;
+      background: transparent;
+      transition: all 0.5s ease-in-out;
+      color: antiquewhite;
+    }
+    .social_media_btn button:hover{
+      color: white;
+      cursor: pointer;
+      background-color: #03e9f4;
+      color: white;
+    }
+  
+    .social_btns_list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 23px;
+      position: absolute;
+      top: 18%;
+      left: -100px;
+    }
+  
+  .social_btns_list a{
+    margin: 15px;
+  
+  }
+  .social_btns_list a button{
+    padding: 17px;
+      font-size: 16px;
+      border-radius: 11px;
+      background-color: transparent;
+      color: aliceblue;
+      box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 25px #03e9f4, 0 0 100px #03e9f4;
+    }
+    .social_btns_list{
+    border: 2px solid;
+      border-radius: 3px 52px 55px 2px;
+      background-color: transparent;
+  
+  }
+  .social_btns_list a{
+    box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 25px #03e9f4, 0 0 100px #03e9f4;
+    font-size: 35px;
+    color: #03e9f4;
+    background-color: aliceblue;
+  }
+  
+  .text_card2 button,.text_card1 button{
+    border-radius: 0px;
+  background-color: transparent;
+  box-shadow: 10px 9px 0px 0px gray;
+  padding: 10px;
+  }
+  .text_card1 button:hover,.text_card2 button:hover{
+    box-shadow: 0px 0px 0px 0px gray;
+    transform: translate(6px,5px);
+    color: white;
+    display: block;
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 1700px) {
+    .btn-1 button{
+      font-size: 16px;
+    }
+    .btn-1{
+      display: flex;
+      position: static;
+      border: 2px solid white;
+      border-radius: 23px;
+      flex-direction: row;
+      width: fit-content;
+      flex-wrap: wrap;
+      right: 0;
+      margin: 27px;
+      padding: 0px;
+      display: none;
+      position: absolute;
+    }
+    
+    .nav_btn{
+      padding: 1px;
+      top: 28px;
+      right: 23px;
+      display: block;
+    }
+    
+    .h-text2{
+      font-size: 14px;
+    }
+    .btns_intro button{
+      margin: 7px;
+      font-size: 16px;
+    }
+    
+    .btn-1_about{
+      display: none;
+    }
+    .btn-2_about{
+      display: flex;
+    }
+    .btn-1 button{
+      margin: 13px;
+    }
+    .footer-bottom p{
+      font-size: 12px;
+    }
+    .footer-bottom{
+        padding-top: 100px;
+    }
+    .btn-1{
+      flex-direction: column;
+      z-index: 3;
+    }
+    
+  }
+  
+  @media (max-width: 1080px) {
+    
+    
+    
+    
+    .btns_intro button {
+        margin: 7px;
+        font-size: 16px;
+    }
+    .img img{
+        width: 100px;
+    }
+    .nav_btn{
+      padding: 1px;
+  
+    }
+    .img_logo img{
+      width: 85px;
+      position: absolute;
+    }
+    
+    .heading{
+        padding: 0px;
+    }
+    .heading h1{
+        font-size: 70px;
+    }
+    .btns_about{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size:23px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-bottom{
+        padding-top: 80px;
+        flex-wrap: wrap;
+    }
+    .btns_about button{
+        padding: 7px;
+    font-size: 12px;
+    }
+    .social_media_btn button{
+        font-size: 8px;
+    }
+    .footer-bottom p{
+        font-size: 8px;
+    }
+    .nav_btn{
+        display: block;
+    }
+    .btn-1{
+        transition: 0.5s ease-in-out;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: black;
+    z-index: 2;
+    padding: 27px 0px;
+    
+    }
+    .btns_about button{
+        margin: 10px;
+    }
+    .social_btns_list{
+        top: 161px;
+    }
+    .img_logo img{
+      top: 1px;
+    }
+    .social_media_btn button {
+      font-size: 15px;
+  }
+  .footer-bottom p {
+    font-size: 16px;
+  }
+  
+    
+  }
+  @media (max-width: 650px) {
+    
+    .heading h1{
+      font-size: 50px;
+    }
+    .btns_intro button {
+        margin: 7px;
+        font-size: 10px;
+    }
+    .img img{
+        width: 59px;
+    }
+    .nav_btn{
+      padding: 1px;
+      top: 28px;
+  
+    }
+    .img_logo img{
+      width: 50px;
+    }
+    .h-text2{
+      font-size: 10px;
+    }
+    .social_btns_list a{
+      font-size: 16px;
+    }
+    .nav_btn span{
+      padding: 2px 16px;
+    }
+    .btn-1 button{
+      margin: 13px;
+      font-size: 22px;
+      padding: 7px;
+      font-size: 12px;
+    }
+  .btn-2_about{
+    display: flex;
+  }
+  .footer-bottom{
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  
+  .footer-bottom{
+    padding-top: 0px;
+  }
+  
+  .footer-bottom p {
+    font-size: 10px;
+  }
+  
+  .footer-bottom {
+    padding-top: 48px;
+  }
+  .btns_about{
+    margin-top: 0px;
+  }
+  
+  .social_media_btn button {
+    font-size: 9px;
+  }
+    .img_logo img{
+        top: 3px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .footer-bottom{
+        padding-top: 0px;
+    }
+    
+    .heading h1{
+        font-size: 30px;
+    }
+    .footer-bottom {
+        padding-top: 48px;
+    }
+    .btns_about{
+        margin-top: 0px;
+    }
+    .footer-bottom p {
+      font-size: 8px;
+  }
+  .img_logo img {
+    top: 1px;
+}
+  .social_media_btn button {
+    font-size: 9px;
+  }
+    
+  }
+   
+  
+  
+  @media (max-width: 300px) {
+    
+    .heading h1{
+        font-size: px;
+    }
+    .heading{
+      margin-top: 67px;
+    }
+    .img_logo img{
+        top: 2px;
+    }
+    
+  .social_media_btn button {
+    font-size: 8px;
+  }
+    
+  
+    }
+  

@@ -155,36 +155,40 @@ video {
     margin: 15px;
     flex-direction: column;
     justify-items: center;
-    filter: drop-shadow(0 0 6px #03e9f4);
     background-size: cover;
     padding: 43px;
     border-radius: 6px;
-    background-color: #000;
+    background-color: rgb(46, 44, 44);
     font-size: 11px;
     transition: all 0.8s ease-in-out;
     position: relative; 
-    filter: brightness(0.8);
+    filter: drop-shadow(0 0 10px #03e9f4);
+    filter: brightness(1);
+    color: #03e9f4;
+    background-blend-mode: darken;
     
   }
   
   
+  
   .proj1 a{
     text-decoration: none;
-    color: white;
-    font-size: 12px;
+    color: #03e9f4;
+    font-size: 19px;
     transition: all 0.3s ease-in-out;
   }
+  
   .proj1 a:hover{
-    color: yellow;
+    color:wheat;
     cursor: pointer;
   }
   .proj1:hover{
-    background-image: none;
+    background-blend-mode:normal;
+    filter: drop-shadow(0 0 10px #03e9f4);
+    filter: brightness(0.5);
     transition: all 0.4s ease-in-out;
     cursor: pointer;   
-    filter: drop-shadow(0 0 10px #03e9f4);
     transform: scale(1.1);
-    background-color: transparent;
     color: yellow;
     
 }
@@ -226,11 +230,18 @@ video {
 .pj12{
   background-image: url(../proj_images/sonar.jpeg);
 }
-
 .pj13{
   background-image: url(../proj_images/cancer.jpeg);
 }
-
+.pj14{
+  background-image: url(../proj_images/web_scrap.jpeg);
+}
+.pj15{
+  background-image: url(../proj_images/ploynomial.jpeg);
+}
+.pj16{
+  background-image: url(../proj_images/resut.jpg);
+}
 
 
 
@@ -387,7 +398,7 @@ video {
       grid-template-columns: 1fr 1fr 1fr;
     }
     video{
-      height: 185%;
+      height: 290%;
     }
     .heading h1{
       font-size: 80px;

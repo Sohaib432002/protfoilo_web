@@ -12,14 +12,13 @@ body {
 }
 
 video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1; /* Ensures the video stays behind other content */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 160%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
   }
 
   .dis_btn{
@@ -70,6 +69,7 @@ video {
   right: 65px;
   top: 37px;
   display: none;
+  z-index: 3;
 }
 .nav_btn span{
   display: flex;
@@ -89,6 +89,7 @@ video {
     position: absolute;
     right: -10%;
     top:15%;
+    z-index: 5;
 
   }
 
@@ -144,11 +145,10 @@ video {
 
 
 .proj_con{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-wrap: wrap;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 0px 103px;
+  font-size: 14px;
 }
 .proj1{
     display: flex;
@@ -156,27 +156,80 @@ video {
     flex-direction: column;
     justify-items: center;
     filter: drop-shadow(0 0 6px #03e9f4);
-    background-image: url("./images/data-science-projects.jpg");
     background-size: cover;
     padding: 43px;
     border-radius: 6px;
-    font-size: 16px;
-    background-color: black;
-    transition: all 0.4s ease-in-out;
-}
-.proj1:hover{
-    background-blend-mode: hard-light;
-    cursor: pointer;   
+    background-color: #000;
+    font-size: 11px;
+    transition: all 0.8s ease-in-out;
+    position: relative; 
+    filter: brightness(0.8);
+    
+  }
+  
+  
+  .proj1 a{
+    text-decoration: none;
     color: white;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  .proj1 a:hover{
+    color: yellow;
+    cursor: pointer;
+  }
+  .proj1:hover{
+    background-image: none;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;   
+    filter: drop-shadow(0 0 10px #03e9f4);
+    transform: scale(1.1);
+    background-color: transparent;
+    color: yellow;
     
 }
 
 
+.pj1{
+  background-image: url(../proj_images/e-commerce-website-design-250x250.png) ;
+  }
+.pj2{
+  background-image: url(../proj_images/personal-portfolio-resume-template_150199-15.png);
+}
+.pj3{
+  background-image:url(../proj_images/Proposed-regression-model-to-estimate-the-overall-quality-of-a-facial-image.png) ;
+}
+.pj4{
+  background-image: url(../proj_images/images.jpeg);
+}
+.pj5{
+  background-image: url(../proj_images/Spotify-logo-1.jpn.png);
+}
+.pj6{
+  background-image: url(../proj_images/png-transparent-rock-paper-scissors-rock-paper-scissors-rock-paper-scissors-wizards-rps-io-scissors-game-hand-technic-thumbnail.png);
+}
+.pj7{
+  background-image: url(../proj_images/password.jpeg);
+}
+.pj8{
+  background-image: url(../proj_images/calculator.jpeg);
+}
+.pj9{
+  background-image: url(../proj_images/dotolist.png);
+}
+.pj10{
+  background-image: url(../proj_images/graph_python.jpeg);
+}
+.pj11{
+  background-image: url(../proj_images/webiste_Responsice.jpeg);
+}
+.pj12{
+  background-image: url(../proj_images/sonar.jpeg);
+}
 
-
-
-
-
+.pj13{
+  background-image: url(../proj_images/cancer.jpeg);
+}
 
 
 
@@ -330,7 +383,15 @@ video {
       flex-direction: column;
       z-index: 3;
     }
-    
+    .proj_con{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    video{
+      height: 185%;
+    }
+    .heading h1{
+      font-size: 80px;
+    }
   }
   
   @media (max-width: 1080px) {
@@ -380,6 +441,13 @@ video {
     .social_media_btn button{
         font-size: 8px;
     }
+    .proj_con{
+      grid-template-columns: 1fr 1fr ;
+    }
+    video{
+      height: 330%;
+    }
+  
     .footer-bottom p{
         font-size: 8px;
     }
@@ -411,8 +479,15 @@ video {
   .footer-bottom p {
     font-size: 16px;
   }
-  
-    
+  }
+  @media (max-width: 850px) {
+    .proj_con{
+      grid-template-columns: 1fr 1fr  ;
+    }
+    video{
+      height: 440%;
+    }
+      
   }
   @media (max-width: 650px) {
     
@@ -440,6 +515,17 @@ video {
     .social_btns_list a{
       font-size: 16px;
     }
+    .proj_con{
+      grid-template-columns: 1fr;
+      padding: 0px 23px ;
+    }
+    .proj1{
+      padding: 21px;
+    }
+    video {
+      height: 567%;
+  }
+      
     .nav_btn span{
       padding: 2px 16px;
     }
@@ -484,6 +570,9 @@ video {
     .footer-bottom{
         padding-top: 0px;
     }
+    .proj1{
+      padding: 7px;
+    }
     
     .heading h1{
         font-size: 30px;
@@ -503,7 +592,9 @@ video {
   .social_media_btn button {
     font-size: 9px;
   }
-    
+    video{
+      height: 490%;
+    }
   }
    
   
@@ -524,6 +615,11 @@ video {
     font-size: 8px;
   }
     
-  
+  .proj1{
+    padding: 7px;
+  }
+  video{
+    height: 570%;
+  }
     }
   

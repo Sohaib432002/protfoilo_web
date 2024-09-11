@@ -165,7 +165,7 @@ video {
     position: relative; 
     box-shadow: #03e9f4 0px 0px 12px 0px;
     filter: brightness(1);
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent overlay color */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay color */
     background-blend-mode: darken;
     color: yellow;
     
@@ -194,9 +194,6 @@ video {
     transition: all 0.4s ease-in-out;
     cursor: pointer;   
     transform: scale(1.1);
-    .proj1 a{
-      color: red;
-    }
     
 }
 

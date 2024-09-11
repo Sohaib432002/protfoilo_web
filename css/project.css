@@ -55,8 +55,8 @@ video {
         9px 9px 0px rgba(0, 0, 0, 0.9);
     transform: rotateY(-20deg);
     -webkit-box-reflect: below -30px linear-gradient(transparent, #0005);
-    /* box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 25px #03e9f4, 0 0 100px #03e9f4; */
-    font-size: 102px;
+    /* box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 25px #03e9f4, 0 0 100px #03e9f4; */ 
+    font-size: 70px;
     font-weight: bolder;
 
     color: antiquewhite;
@@ -159,13 +159,15 @@ video {
     padding: 43px;
     border-radius: 6px;
     background-color: rgb(46, 44, 44);
+    filter: grayscale(100%);
     font-size: 11px;
     transition: all 0.8s ease-in-out;
     position: relative; 
-    filter: drop-shadow(0 0 10px #03e9f4);
+    box-shadow: #03e9f4 0px 0px 12px 0px;
     filter: brightness(1);
-    color: #03e9f4;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent overlay color */
     background-blend-mode: darken;
+    color: yellow;
     
   }
   
@@ -173,74 +175,126 @@ video {
   
   .proj1 a{
     text-decoration: none;
-    color: #03e9f4;
     font-size: 19px;
+    color: aliceblue;
     transition: all 0.3s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .proj1 a:hover{
-    color:wheat;
+    color: yellow;
+    text-decoration: underline;
     cursor: pointer;
   }
   .proj1:hover{
     background-blend-mode:normal;
     filter: drop-shadow(0 0 10px #03e9f4);
-    filter: brightness(0.5);
+    filter: brightness(1);
+    font-size: 0px;
     transition: all 0.4s ease-in-out;
     cursor: pointer;   
     transform: scale(1.1);
-    color: yellow;
+    .proj1 a{
+      color: red;
+    }
     
 }
 
 
 .pj1{
-  background-image: url(../proj_images/e-commerce-website-design-250x250.png) ;
+  background-image: url(../proj_images/PassFab20240911_151120486.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
   }
 .pj2{
-  background-image: url(../proj_images/personal-portfolio-resume-template_150199-15.png);
+  background-image: url(../proj_images/protfoli_website_pic.png); 
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj3{
   background-image:url(../proj_images/Proposed-regression-model-to-estimate-the-overall-quality-of-a-facial-image.png) ;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj4{
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: url(../proj_images/images.jpeg);
 }
 .pj5{
   background-image: url(../proj_images/Spotify-logo-1.jpn.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj6{
   background-image: url(../proj_images/png-transparent-rock-paper-scissors-rock-paper-scissors-rock-paper-scissors-wizards-rps-io-scissors-game-hand-technic-thumbnail.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj7{
-  background-image: url(../proj_images/password.jpeg);
+  background-image: url(../proj_images/password_geng.png);
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 .pj8{
   background-image: url(../proj_images/calculator.jpeg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj9{
   background-image: url(../proj_images/dotolist.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj10{
   background-image: url(../proj_images/graph_python.jpeg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj11{
   background-image: url(../proj_images/webiste_Responsice.jpeg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj12{
   background-image: url(../proj_images/sonar.jpeg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj13{
   background-image: url(../proj_images/cancer.jpeg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj14{
   background-image: url(../proj_images/web_scrap.jpeg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj15{
   background-image: url(../proj_images/ploynomial.jpeg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .pj16{
   background-image: url(../proj_images/resut.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 
